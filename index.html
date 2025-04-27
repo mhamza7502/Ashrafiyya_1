@@ -147,16 +147,18 @@
   </div>
 </section>
 
+
 <section id="subscribe" class="tile alternate">
-  <h2 class="section-title">Stay Connected with Ashrafiyya</h2>
-  <p class="intro">We warmly invite you to stay connected. Kindly share your details. May Allah ﷻ bless your journey of seeking knowledge.</p>
-  
-  <form class="subscribe-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Any comments or class interests" rows="3"></textarea>
-    <button type="submit" class="btn">Subscribe</button>
-  </form>
+  <div class="subscribe-container">
+    <h2 class="subscribe-title">Stay Connected with Ashrafiyya</h2>
+    <p class="subscribe-text">We warmly invite you to stay connected. Kindly share your details. May Allah ﷻ bless your journey of seeking knowledge.</p>
+    <form class="subscribe-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Any comments or class interests" rows="2"></textarea>
+      <button type="submit" class="btn-subscribe" onclick="event.preventDefault()">Subscribe</button>
+    </form>
+  </div>
 </section>
 
 <!-- Footer -->
