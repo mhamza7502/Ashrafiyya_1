@@ -22,30 +22,66 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
 }
+
+/* Header */
+header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(210, 210, 215, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 20px;
+  text-align: center;
+}
+
+.hero-logo {
+  width: 200px;
+  max-width: 90%;
+  margin: 0 auto 30px auto;
+  display: block;
+}
+
 .bismillah {
   font-family: 'Scheherazade New', serif;
   font-size: 24px;
   color: #5b5b5b;
   margin-bottom: 20px;
   text-align: center;
-}
-/* Hero Section */
-.hero {
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 80px 20px 20px;
-  text-align: center;
-  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
-}
-
-.hero-logo {
-  width: 200px;
-  max-width: 90%;
-  margin: 0 auto 20px auto;
-  display: block;
 }
 
 .hero h1 {
@@ -84,10 +120,10 @@ body {
   font-size: 16px;
 }
 
-/* Card Grid */
+/* Cards */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
@@ -98,8 +134,9 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s;
 }
 
 .card:hover {
@@ -107,7 +144,7 @@ body {
 }
 
 .card h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 10px;
   white-space: nowrap;
   overflow: hidden;
@@ -118,11 +155,13 @@ body {
   font-size: 15px;
   color: #555;
   margin-bottom: 20px;
+  flex-grow: 1;
 }
 
+/* Limited Text Reveal */
 .limited-text {
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -133,24 +172,7 @@ body {
   overflow: visible;
 }
 
-/* Class Info */
-.class-info {
-  margin-bottom: 15px;
-  font-size: 14px;
-  color: var(--light-text);
-  line-height: 1.6;
-}
-
-/* Card Buttons */
-.card-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: auto;
-}
-
-/* Buttons */
+/* Button */
 .btn {
   background: var(--primary-color);
   color: white;
@@ -169,18 +191,6 @@ body {
   box-shadow: 0 6px 12px rgba(47, 79, 79, 0.3);
 }
 
-.secondary-btn {
-  background: transparent;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.secondary-btn:hover {
-  background: var(--primary-color);
-  color: white;
-}
-
-/* Subscribe Section */
 /* Subscribe Section */
 .subscribe-section {
   background: linear-gradient(to bottom, #f9f9f9, #ffffff);
@@ -249,7 +259,7 @@ body {
 
 /* Footer */
 footer {
-  background: var(--footer-background);
+  background-color: var(--footer-background);
   color: #e6e6e6;
   padding: 60px 20px;
   border-top: 4px solid var(--primary-color);
@@ -272,13 +282,14 @@ footer {
 
 .footer-desc {
   font-size: 14px;
-  color: #b0b0b0;
   line-height: 1.6;
+  color: #b0b0b0;
 }
 
 footer p,
 footer a {
   font-size: 14px;
+  line-height: 1.6;
   color: #cfcfcf;
   text-decoration: none;
 }
@@ -297,7 +308,7 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
-/* Animation Classes */
+/* Reveal animation */
 .reveal-text, .reveal-element {
   opacity: 0;
   transform: translateY(20px);
@@ -309,8 +320,41 @@ footer a:hover {
   transform: translateY(0);
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    width: 200px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .menu-button span {
+    width: 25px;
+    height: 2px;
+    background: var(--text-color);
+  }
+
   .hero h1 {
     font-size: 36px;
   }
@@ -321,14 +365,6 @@ footer a:hover {
 
   .card-grid {
     grid-template-columns: 1fr;
-  }
-
-  .subscribe-form {
-    flex-direction: column;
-  }
-
-  .subscribe-form input[type="email"] {
-    width: 100%;
   }
 }
 
