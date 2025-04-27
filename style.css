@@ -22,7 +22,13 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
 }
-
+.bismillah {
+  font-family: 'Scheherazade New', serif;
+  font-size: 24px;
+  color: #5b5b5b;
+  margin-bottom: 20px;
+  text-align: center;
+}
 /* Hero Section */
 .hero {
   min-height: 90vh;
@@ -38,7 +44,7 @@ body {
 .hero-logo {
   width: 200px;
   max-width: 90%;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px auto;
   display: block;
 }
 
