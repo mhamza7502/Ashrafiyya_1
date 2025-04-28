@@ -2,188 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashrafiyya - Islamic Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashrafiyya</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- Navigation Menu -->
-  <header>
-    <nav class="nav-container">
-      <div class="logo-space"></div> <!-- Empty div to push menu to the right -->
-
-      <div class="nav-links">
-        <a href="#classes">Classes</a>
-        <a href="#ethics">Health Ethics</a>
-        <a href="#scholarship">Scholarship</a>
-        <a href="#subscribe">Subscribe</a>
-      </div>
-
-      <div class="menu-button">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content reveal-element">
-      <img src="logo.png" alt="Ashrafiyya Logo" class="hero-logo" />
-      <p class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</p>
-      <h1>Seeking Knowledge with Adab</h1>
-      <p class="intro-text">
-        Welcome to Ashrafiyya.  
-        A humble effort to revive the tradition of sacred learning with sincerity, humility, and gratitude to Allah ﷻ.
-      </p>
-      <p class="intro-text">
-        We strive to walk the path of adab, respect, and reflection — nurturing hearts before minds, Insha'Allah.
-      </p>
-      <p class="intro-text">
-        May Allah ﷻ accept from all of us, make us sincere seekers, and bless us with beneficial knowledge. آمين.
-      </p>
-      <a href="#classes" class="btn cta-button">Begin the Journey</a>
+<!-- Navigation -->
+<header>
+  <nav class="nav-container">
+    <div class="menu-button" id="menu-button">
+      <span></span><span></span><span></span>
     </div>
-  </section>
-  
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#health">Health Teasers</a></li>
+      <li><a href="#scholarship">Itqān Scholarship</a></li>
+      <li><a href="#subscribe">Subscribe</a></li>
+    </ul>
+  </nav>
+</header>
 
-<!-- Islamic Classes Section -->
-<section id="classes" class="tile">
-  <h2 class="section-title">Islamic Classes</h2>
-  <p class="intro">Authentic courses to deepen your Islamic knowledge.</p>
-  <div class="card-grid">
+<!-- Hero Section -->
+<section class="hero">
+  <img src="logo.png" alt="Ashrafiyya Logo" class="hero-logo">
+  <div class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</div>
+</section>
 
-    <!-- Qur'an Studies -->
-    <div class="card reveal-element">
-      <h3>Qur'an Studies</h3>
-      <p class="limited-text">Learn proper recitation, tafsir (exegesis), and reflection on the meanings of the Qur'an through traditional and modern interpretations.</p>
-      <div class="class-info">
-        <p><strong>Start Date:</strong> May 15, 2025</p>
-        <p><strong>Days:</strong> Mondays and Wednesdays</p>
-        <p><strong>Time:</strong> 7:00 PM - 8:30 PM EST</p>
-      </div>
-      <div class="card-buttons">
-        <a href="#" class="btn">Register</a>
-        <a href="quran-course.pdf" class="btn secondary-btn" download>Download Syllabus</a>
-      </div>
-    </div>
-
-    <!-- Hadith Class -->
-    <div class="card reveal-element">
-      <h3>Hadith</h3>
-      <p class="limited-text">Study the sayings of Prophet Muhammad (PBUH), focusing on authenticity, interpretation, and contemporary relevance in daily life.</p>
-      <div class="class-info">
-        <p><strong>Start Date:</strong> June 3, 2025</p>
-        <p><strong>Days:</strong> Tuesdays and Thursdays</p>
-        <p><strong>Time:</strong> 6:30 PM - 8:00 PM EST</p>
-      </div>
-      <div class="card-buttons">
-        <a href="#" class="btn">Register</a>
-        <a href="hadith-course.pdf" class="btn secondary-btn" download>Download Syllabus</a>
-      </div>
-    </div>
-
-    <!-- Fiqh Class (Ongoing, not available) -->
-    <div class="card reveal-element">
-      <h3>Fiqh</h3>
-      <p class="limited-text">Understand Islamic jurisprudence (Fiqh), daily life applications, worship, ethical rulings, and contemporary legal matters through authentic teachings.</p>
-      <div class="class-info">
-        <p><strong>Status:</strong> Ongoing / Registration Closed</p>
-      </div>
-      <!-- No Register button -->
-      <div class="card-buttons">
-        <a href="fiqh-course.pdf" class="btn secondary-btn" download>Download Syllabus</a>
-      </div>
-    </div>
-
+<!-- Health Teasers Program Section -->
+<section id="health" class="tile">
+  <h2 class="section-title">Health Teasers Program (Rutgers University)</h2>
+  <p class="intro">
+    Join us on <strong>June 1st, 2025</strong> at <strong>Rutgers University</strong> for a special event exploring Islamic perspectives on health, ethics, and well-being. Open to all participants.
+  </p>
+  <div class="button-group">
+    <a href="flyer.pdf" class="btn secondary" download>Download Flyer</a>
+    <a href="https://your-registration-link-here" class="btn" target="_blank">Register</a>
   </div>
 </section>
 
-<!-- Health Ethics Section -->
-<section id="ethics" class="tile alternate">
-  <h2 class="section-title">Health Ethics in Islam</h2>
-  <p class="intro">Guidance on Islamic ethical principles for medical professionals.</p>
-  <div class="card-grid">
-
-    <!-- Health Ethics -->
-    <div class="card reveal-element">
-      <h3>Medical Ethics</h3>
-      <p class="limited-text">Covering contemporary medical dilemmas including organ donation, end-of-life decisions, patient confidentiality, and Islamic bioethics frameworks for professionals.</p>
-      <div class="class-info">
-        <p><strong>Start Date:</strong> July 10, 2025</p>
-        <p><strong>Days:</strong> Saturdays</p>
-        <p><strong>Time:</strong> 2:00 PM - 5:00 PM EST</p>
-      </div>
-      <div class="card-buttons">
-        <a href="#" class="btn">Register</a>
-        <a href="health-ethics-course.pdf" class="btn secondary-btn" download>Download Syllabus</a>
-      </div>
-    </div>
-
+<!-- Itqan Scholarship Section -->
+<section id="scholarship" class="tile alternate">
+  <h2 class="section-title">Itqān Scholarship Program</h2>
+  <p class="intro">
+    Through the Itqān Scholarship Program, Ashrafiyya supports sincere students committed to pursuing traditional Islamic education with excellence and adab, Insha’Allah.
+  </p>
+  <div class="button-group">
+    <a href="https://your-scholarship-application-link-here" class="btn" target="_blank">Apply</a>
   </div>
 </section>
 
-<!-- Scholarship Program Section -->
-<section id="scholarship" class="tile">
-  <h2 class="section-title">Ashrafiyya Scholarship Program</h2>
-  <p class="intro">Support for committed students pursuing Islamic knowledge.</p>
-  <div class="card-grid">
-
-    <!-- Scholarship -->
-    <div class="card reveal-element">
-      <h3>Scholarship Opportunity</h3>
-      <p class="limited-text">Apply for financial support covering tuition fees for eligible students demonstrating academic commitment, service potential, and financial need.</p>
-      <div class="class-info">
-        <p><strong>Application Deadline:</strong> August 15, 2025</p>
-      </div>
-      <div class="card-buttons">
-        <a href="#" class="btn">Apply for Scholarship</a>
-        <a href="scholarship-details.pdf" class="btn secondary-btn" download>Download Details</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section id="subscribe" class="tile alternate">
-  <div class="subscribe-container">
-    <h2 class="subscribe-title">Stay Connected with Ashrafiyya</h2>
-    <p class="subscribe-text">We warmly invite you to stay connected. Kindly share your details. May Allah ﷻ bless your journey of seeking knowledge.</p>
-    <form class="subscribe-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Any comments or class interests" rows="2"></textarea>
-      <button type="submit" class="btn-subscribe" onclick="event.preventDefault()">Subscribe</button>
-    </form>
-  </div>
+<!-- Subscribe Section -->
+<section id="subscribe" class="tile">
+  <h2 class="section-title">Stay Connected</h2>
+  <p class="intro">
+    Subscribe to receive updates on upcoming programs and opportunities, Insha’Allah.
+  </p>
+  <form class="subscribe-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Comments or Interests (optional)" rows="3"></textarea>
+    <button type="submit" class="btn">Subscribe</button>
+  </form>
 </section>
 
 <!-- Footer -->
 <footer>
-  <div class="footer-grid">
-    <div>
-      <h3 class="footer-title">Ashrafiyya</h3>
-      <p class="footer-desc">Dedicated to authentic Islamic education and spiritual growth.</p>
-    </div>
-    <div>
-      <h3 class="footer-title">Contact</h3>
-      <p>Email: info@ashrafiyya.org</p>
-      <p>Phone: (123) 456-7890</p>
-    </div>
-    <div>
-      <h3 class="footer-title">Quick Links</h3>
-      <ul class="footer-links">
-        <li><a href="#classes">Classes</a></li>
-        <li><a href="#health-ethics">Health Ethics</a></li>
-        <li><a href="#scholarship">Scholarship</a></li>
-      </ul>
-    </div>
-  </div>
+  <p>📧 info@ashrafiyya.org</p>
+  <p>&copy; 2025 Ashrafiyya. All rights reserved.</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
